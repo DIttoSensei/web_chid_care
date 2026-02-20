@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aunty Dayo Care | Modern Postpartum Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap');
+        
+        :root {
+            --soft-clay: #7d6b5d;
+            --muted-gold: #c5a16f;
+            --linen: #f9f6f2;
+        }
+
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--linen); color: #333; }
+        h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
+
+        .modern-card {
+            background: #ffffff;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid #eee;
+        }
+
+        .modern-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--muted-gold);
+        }
+
+        .dark-policy-card {
+            background: #2d241e;
+            color: #f9f6f2;
+        }
+
+        .booking-placeholder {
+            background-image: radial-gradient(circle at 2px 2px, #e5e7eb 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        /* Prevent horizontal scroll on mobile due to AOS */
+        html, body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 sm:py-5 flex justify-between items-center">
+            <div class="text-xl sm:text-2xl font-semibold tracking-tighter serif italic text-gray-800">Aunty Dayo Care</div>
+            
+            <div class="hidden lg:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-500">
+                <a href="#services" class="hover:text-amber-700 transition">Services</a>
+                <a href="#pricing" class="hover:text-amber-700 transition">Investment</a>
+                <a href="#book" class="hover:text-amber-700 transition">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/447717623592" class="text-[10px] sm:text-[11px] uppercase tracking-widest bg-gray-900 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-amber-800 transition whitespace-nowrap">Book Now</a>
+                <button class="lg:hidden text-gray-800 text-xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-100 px-8 py-6 space-y-4 text-[11px] uppercase tracking-widest font-semibold text-gray-500">
+            <a href="#services" class="block hover:text-amber-700" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+            <a href="#pricing" class="block hover:text-amber-700" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Investment</a>
+            <a href="#book" class="block hover:text-amber-700" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center pt-24 sm:pt-32 pb-12 px-6 sm:px-8">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-5xl sm:text-6xl lg:text-8xl leading-[1.1] mb-6 sm:mb-8 text-gray-900">
+                    You don't have <br><span class="italic text-amber-800">to do this alone.</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-500 max-w-md leading-relaxed mb-8 sm:mb-10 font-light">
+                    Professional in-home postpartum and newborn support, merging traditional warmth with modern healthcare standards.
+                </p>
+                <div class="flex flex-col sm:flex-row sm:items-center space-y-6 sm:space-y-0 sm:space-x-8">
+                    <a href="#pricing" class="inline-block border-b-2 border-amber-800 pb-1 font-semibold tracking-wide hover:text-amber-800 transition w-fit">View Support Packages</a>
+                    <span class="hidden sm:inline text-gray-300">/</span>
+                    <a href="tel:07717623592" class="text-xs sm:text-sm font-semibold tracking-widest uppercase">Call 07717 623592</a>
+                </div>
+            </div>
+            <div class="relative mt-8 lg:mt-0" data-aos="fade-left" data-aos-delay="200">
+                <div class="aspect-[4/5] rounded-[30px] sm:rounded-[40px] overflow-hidden grayscale-[20%] hover:grayscale-0 transition duration-700 shadow-2xl">
+                    <img src="assets/img.jpg" class="object-cover w-full h-full" alt="Mother Support">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 sm:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="mb-12 sm:mb-20" data-aos="fade-up">
+                <p class="text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-amber-700 font-bold mb-4 italic">Investment & Care</p>
+                <h2 class="text-4xl sm:text-5xl serif">Flexible Support Options</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6">
+                <div class="modern-card p-8 sm:p-10 rounded-[30px]" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-8 text-amber-800"><i class="fa-solid fa-sun text-3xl"></i></div>
+                    <h3 class="text-2xl mb-4 serif italic">Daytime Support</h3>
+                    <p class="text-4xl mb-6 font-light">£15.50<span class="text-sm text-gray-400">/hr</span></p>
+                    <ul class="space-y-4 text-sm text-gray-500 mb-10 border-t pt-6">
+                        <li>• Postpartum mother support (non-medical)</li>
+                        <li>• Newborn care & settling</li>
+                        <li>• Feeding & sleep routine guidance</li>
+                        <li>• Baby-focused household support</li>
+                    </ul>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400">Minimum: 4 Hours</p>
+                </div>
+
+                <div class="modern-card p-8 sm:p-10 rounded-[30px] bg-gray-50 border-none lg:scale-105 z-10 shadow-xl shadow-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl mb-4 serif italic">Overnight Care</h3>
+                    <p class="text-4xl mb-2 font-light">£135<span class="text-sm text-gray-400">/night</span></p>
+                    <p class="text-xs text-amber-700 italic mb-8">8–10 Hour Night Stay</p>
+                    <div class="space-y-2 mb-8 text-sm">
+                        <div class="flex justify-between"><span>Weekdays:</span> <b>£14 / hr</b></div>
+                        <div class="flex justify-between"><span>Weekends:</span> <b>£16 / hr</b></div>
+                    </div>
+                    <ul class="space-y-4 text-sm text-gray-500 border-t pt-6 mb-4">
+                        <li>• Night-time soothing & feeding</li>
+                        <li>• Ensuring parents get restorative rest</li>
+                        <li>• Professional newborn safety</li>
+                    </ul>
+                </div>
+
+                <div class="modern-card p-8 sm:p-10 rounded-[30px]" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl mb-4 serif italic">In-Home Childcare</h3>
+                    <div class="space-y-2 mb-8 text-sm">
+                        <div class="flex justify-between"><span>Weekdays:</span> <b>£14 / hr</b></div>
+                        <div class="flex justify-between"><span>Weekends:</span> <b>£16 / hr</b></div>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-10 italic">Trusted care for date nights & events (up to age 10).</p>
+                    <p class="text-[10px] uppercase tracking-widest font-bold text-gray-400">Minimum: 3 Hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-24 px-6 sm:px-8">
+        <div class="max-w-5xl mx-auto dark-policy-card rounded-[30px] sm:rounded-[40px] p-8 sm:p-12 lg:p-20 relative overflow-hidden" data-aos="zoom-in">
+            <div class="relative z-10">
+                <h3 class="text-3xl sm:text-4xl serif italic mb-8 sm:mb-10">Travel Policy & Coverage</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+                    <div>
+                        <p class="text-amber-500 text-[10px] uppercase tracking-widest mb-2 font-bold">Wolverhampton</p>
+                        <p class="text-xl sm:text-2xl">Base Rate</p>
+                    </div>
+                    <div>
+                        <p class="text-amber-500 text-[10px] uppercase tracking-widest mb-2 font-bold">Dudley / Walsall / Telford</p>
+                        <p class="text-xl sm:text-2xl">+£5 <span class="text-sm opacity-50">/ booking</span></p>
+                    </div>
+                    <div>
+                        <p class="text-amber-500 text-[10px] uppercase tracking-widest mb-2 font-bold">Birmingham</p>
+                        <p class="text-xl sm:text-2xl">+£10–£15 <span class="text-sm opacity-50">/ booking</span></p>
+                    </div>
+                </div>
+                <p class="mt-10 sm:mt-12 text-[10px] sm:text-xs text-gray-400 italic">Coverage areas include all surrounding West Midlands boroughs.</p>
+            </div>
+            <div class="absolute -right-20 -bottom-20 w-48 h-48 sm:w-64 sm:h-64 bg-amber-800/10 rounded-full"></div>
+        </div>
+    </section>
+
+    <section id="book" class="py-20 sm:py-32 px-6 sm:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl sm:text-5xl serif mb-6 italic">Start Your Journey</h2>
+            <p class="text-gray-500 mb-12 sm:mb-16 font-light text-sm sm:text-base">Select a time for your free 10-minute consultation.</p>
+            
+            <div class="booking-placeholder border rounded-[30px] p-10 sm:p-20 flex flex-col items-center mb-10">
+                <p class="text-[10px] uppercase tracking-[0.4em] text-gray-400 mb-4">Calendly Widget Area</p>
+                <div class="w-12 h-[1px] bg-gray-200"></div>
+                <p class="mt-4 text-[11px] sm:text-sm text-gray-400 italic font-light text-center">Available for Phase 2 Integration</p>
+            </div>
+
+            <div class="space-y-6">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Initial Test Run Booking</p>
+                <a href="https://wa.me/447717623592" class="inline-block bg-green-600 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full font-semibold hover:bg-green-700 transition shadow-lg shadow-green-100 text-sm sm:text-base">
+                    <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> WhatsApp Enquiries
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 sm:py-20 border-t border-gray-100 text-center px-6">
+        <p class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400">© 2026 Aunty Dayo Care • Serving the West Midlands</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-quad',
+            disable: 'mobile' // Optional: disables animations on mobile for faster loading
+        });
+    </script>
+</body>
+</html>
